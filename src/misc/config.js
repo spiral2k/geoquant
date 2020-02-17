@@ -6,7 +6,8 @@
 export default [
     {
       "title": "title",
-      "fieldName": "Title"
+      "fieldName": "Title",
+      "style": { width: "200px", background: "#f06", color: "#fff" }
     },
     {
       "title": "year",

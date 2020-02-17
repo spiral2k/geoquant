@@ -11,7 +11,7 @@ const Cell = memo((props) => {
         }
     }
 
-    return <td>{getCellContentByType()}</td>
+    return <td style={{...props.style}}>{getCellContentByType()}</td>
 })
 
 export default Cell;

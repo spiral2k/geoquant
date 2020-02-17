@@ -10,7 +10,7 @@ import Cell from '../Cell/Cell';
 const Row = memo(({ rowData, config }) => {
     return (
         <tr>
-           {config.map((ele, i) => <Cell key={`cell-${i}`} type={config[i].type || 'string'}>{config[i].fieldName.split('.').reduce((prev, curr) =>  prev ? prev[curr] : null, rowData)}</Cell>)} 
+           {config.map((ele, i) => <Cell key={`cell-${i}`} type={config[i].type || 'string'} style={config[i].style || {}}>{config[i].fieldName.split('.').reduce((prev, curr) =>  prev ? prev[curr] : null, rowData)}</Cell>)} 
         </tr>
     )
 })
