@@ -6,7 +6,7 @@ const Cell = memo((props) => {
             case "img": return <img src={props.children} alt={props.children} />
             case "anchor": return <a href={props.children} alt="">{props.children}</a>
 
-            /* we can easly add more cell types here */
+            /* we can easily add more cell types here */
             default: return props.children;
         }
     }
